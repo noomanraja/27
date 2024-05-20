@@ -1,8 +1,8 @@
-import React from 'react';
-import axios from 'axios';
+import React, { useState, useEffect } from 'react'
 
 const Home = () => {
-  // ...
-};
+  const [pokemons, setPokemons] = useState([])
+  const [types, setTypes] = useState([])
 
-export default Home;
+  useEffect(() => {
+    
