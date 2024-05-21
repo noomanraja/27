@@ -30,8 +30,8 @@ function Teams() {
       {teams.map(team => (
         <div key={team._id}>
           <h2>{team.title}</h2>
-          <img src={team.image.url} alt={team.title} /> // https://pixabay.com/illustrations/pokemon-pokemon-ball-free-graphics-1702772/
-
+          <img src={team.image.url} alt={team.title} /> 
+          // Link til logo brukt https://pixabay.com/illustrations/pokemon-pokemon-ball-free-graphics-1702772/
         </div>
       ))}
     </div>
