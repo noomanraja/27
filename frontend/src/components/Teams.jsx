@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import sanityClient from '@sanity/client';
+import logo from '../images/favicon-32x32.png'
+import '../index.css'
+
 
 const client = sanityClient({
   projectId: 'your-project-id', 
@@ -20,7 +23,10 @@ function Teams() {
 
   return (
     <div>
+    <div className='container-header'>
+    <img src={logo} className='img-logo' alt='logo'/>
       <h1>Teams</h1>
+      </div>
       {teams.map(team => (
         <div key={team._id}>
           <h2>{team.title}</h2>

@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: white;
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -65,3 +65,25 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+p{
+  color: black;
+}
+
+.container-header {
+  position: relative;
+}
+
+.img-logo {
+  position: absolute;
+  right: 163%;
+  bottom: 850%;
+}
+
+@media (max-width: 768px) {
+  .img-logo {
+    position: absolute;
+  right: 163%;
+  bottom: 820%;
+  }
+}
+

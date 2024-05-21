@@ -16,7 +16,6 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <Router>
         <header>
-          <img src="pokeball.png" alt="Pokeball" /> {/* */}
           <Link to="/"><h1>UIN POKEDEX</h1></Link>
           <Link to="/teams">Teams</Link>
           <SearchBar />
