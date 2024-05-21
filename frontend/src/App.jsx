@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from 'react-query';
@@ -17,6 +16,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <Router>
         <header>
+          <img src="pokeball.png" alt="Pokeball" /> {/* */}
           <Link to="/"><h1>UIN POKEDEX</h1></Link>
           <Link to="/teams">Teams</Link>
           <SearchBar />
@@ -36,4 +36,3 @@ function App() {
 }
 
 export default App;
-
